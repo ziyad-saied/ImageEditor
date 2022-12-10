@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageEditor</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="imagesContainer">
+        <div class="image">
+          <img id="img" />
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="upload">
+          <label for="upload">Upload</label>
+          <input type="file" id="upload" />
+        </div>
+      </div>
+      <div class="optionsContainer">
+        <label for="saturate">Saturate</label>
+        <input
+          type="range"
+          name="saturate"
+          id="saturate"
+          value="100"
+          min="0"
+          max="200"
+        />
+
+        <label for="contrast">Contrast</label>
+        <input
+          type="range"
+          name="contrast"
+          id="contrast"
+          value="100"
+          min="0"
+          max="200"
+        />
+
+        <label for="brightness">Brightness</label>
+        <input
+          type="range"
+          name="brightness"
+          id="brightness"
+          value="100"
+          min="0"
+          max="200"
+        />
+
+        <label for="sepia">Sepia</label>
+        <input
+          type="range"
+          name="sepia"
+          id="sepia"
+          value="0"
+          min="0"
+          max="200"
+        />
+
+        <label for="grayScale">Gray Scale</label>
+        <input
+          type="range"
+          name="grayScale"
+          id="grayScale"
+          step="0.1"
+          value="0"
+          min="0"
+          max="1"
+        />
+
+        <label for="blur">Blur</label>
+        <input
+          type="range"
+          name="blur"
+          id="blur"
+          step="0.1"
+          value="0"
+          min="0"
+          max="10"
+        />
+
+        <label for="hueRotate">Hue Rotate</label>
+        <input
+          type="range"
+          name="hueRotate"
+          id="hueRotate"
+          value="0"
+          min="0"
+          max="350"
+        />
+        <div class="buttons">
+          <button id="reset">Reset</button>
+          <a download="image" id="download">Download</a>
+          <!-- <button>Download</button> -->
+        </div>
+      </div>
+    </div>
+    <script src="javascribt/interactive.js"></script>
+  </body>
+</html>
